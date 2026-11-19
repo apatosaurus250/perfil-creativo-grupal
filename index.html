@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil creativo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Diego Cordero</h1>
+        <p>Diseño · Tecnología · Producción Audiovisual</p>
+        <p>Transformando ideas en experiencias digitales.</p>
+    </header>
+
+    <main>
+
+        <!-- IDENTIDAD CREATIVA -->
+        <section>
+            <h2>Sobre mí</h2>
+
+            <img src="imagenes/diego.jpg"
+                alt="Fotografía de Diego Cordero">
+
+            <p>
+                Soy Diego Cordero, estudiante de
+                <strong>Diseño Multimedia</strong>.
+                Me interesa explorar la creatividad a través
+                de la fotografía, la edición de video y el
+                desarrollo de videojuegos.
+            </p>
+
+            <p>
+                Me gusta combinar el diseño y la tecnología
+                para crear experiencias visuales e interactivas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Lo que me interesa crear</h2>
+
+            <ul>
+                <li>Experiencias interactivas</li>
+                <li>Animaciones</li>
+                <li>Interfaces digitales</li>
+                <li>Videojuegos</li>
+                <li>Realidad aumentada</li>
+            </ul>
+        </section>
+
+        <!-- PROYECTOS CREATIVOS -->
+        <section id="proyectos">
+            <h2>Mis proyectos creativos</h2>
+
+            <div class="proyectos">
+
+                <figure>
+                    <img src="imagenes/Afiche Concurso - Cordero.jpg"
+                        alt="Afiche publicitario diseñado por Diego Cordero">
+
+                    <figcaption>
+                        <h3>Afiche publicitario</h3>
+                        <p>Diseño gráfico y composición visual.</p>
+                        <p><strong>Técnica:</strong> Diseño digital.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagenes/cafeteria-02.jpg"
+                        alt="Propuesta visual de una cafetería ficticia">
+
+                    <figcaption>
+                        <h3>Identidad de cafetería</h3>
+                        <p>Conceptualización y diseño de una marca ficticia.</p>
+                        <p><strong>Técnica:</strong> Diseño y creatividad visual.</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA MULTIMEDIA -->
+        <section id="multimedia">
+            <h2>Mi experiencia multimedia</h2>
+
+            <p>
+                La música y el contenido audiovisual son parte
+                de mi inspiración para crear nuevas experiencias.
+            </p>
+
+            <h3>Mi inspiración sonora</h3>
+
+            <p>
+                Esta cancion es mi favorita y me ayuda a concentrarme
+                en mis proyectos multimedia.
+            </p>
+
+            <audio controls>
+                <source src="audio/Avicii.mp3" type="audio/mpeg">
+                Tu navegador no puede reproducir este audio.
+            </audio>
+
+            <h3>Contenido audiovisual</h3>
+
+            <p>
+                Video gracioso de perritos bailando.
+            </p>
+
+            <video controls width="100%">
+                <source src="video/perritos.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+            </video>
+
+        </section>
+
+        <!-- FORMULARIO DEMOSTRATIVO -->
+        <section id="contacto">
+            <h2>Contáctame</h2>
+
+            <p>
+                ¿Tienes alguna idea o proyecto?
+                Completa el siguiente formulario.
+            </p>
+
+            <form onsubmit="return false;">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre"
+                    name="nombre"
+                    placeholder="Ejemplo: Juan Pérez"
+                    required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required>
+
+                <label for="tipo">Tipo de proyecto:</label>
+
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="diseno">Diseño gráfico</option>
+                    <option value="video">Edición de video</option>
+                    <option value="animacion">Animación</option>
+                    <option value="videojuego">Desarrollo de videojuegos</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <p>Modalidad de colaboración:</p>
+
+                <input type="radio" id="presencial"
+                    name="modalidad" value="presencial" required>
+                <label for="presencial">Presencial</label>
+
+                <input type="radio" id="virtual"
+                    name="modalidad" value="virtual">
+                <label for="virtual">Virtual</label>
+
+                <input type="radio" id="ambas"
+                    name="modalidad" value="ambas">
+                <label for="ambas">Ambas</label>
+
+                <label for="mensaje">Mensaje:</label>
+
+                <textarea id="mensaje"
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje de prueba"
+                    rows="5"
+                    required></textarea>
+
+                <button type="submit">
+                    Probar formulario
+                </button>
+
+                <p class="aviso-formulario">
+                    Este formulario es únicamente demostrativo.
+                    Utiliza datos ficticios. La información
+                    ingresada no se guarda ni se envía a ningún lugar.
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- REGRESAR A LA LANDING PAGE -->
+    <section class="volver-equipo">
+        <a href="../../index.html">
+            Volver al equipo
+        </a>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <h3>Diego Cordero</h3>
+        <p>Estudiante de Diseño Multimedia</p>
+        <p>Creatividad, diseño y tecnología.</p>
+
+        <p class="copyright">
+            © 2026 Diego Cordero. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
