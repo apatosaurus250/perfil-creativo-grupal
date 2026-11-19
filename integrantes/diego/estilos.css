@@ -1,0 +1,324 @@
+
+/* MI PERFIL CREATIVO - DIEGO CORDERO */
+/* ESTILO: TECNOLOGÍA Y DISEÑO MULTIMEDIA */
+
+
+/* 1. ESTILOS GENERALES */
+
+body {
+    background-color: #0b1020;
+    color: #e8edf5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* 2. CABECERA */
+
+header {
+    background: linear-gradient(135deg, #111b35, #172b4d);
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 2px solid #00d9ff;
+}
+
+h1 {
+    color: #00d9ff;
+    font-size: 42px;
+    margin: 0;
+}
+
+header p {
+    color: #b8c7df;
+}
+
+
+/* 3. CONTENEDOR PRINCIPAL */
+
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+
+/* 4. SECCIONES */
+
+section {
+    background-color: #151f35;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    border: 1px solid #263653;
+}
+
+h2 {
+    color: #00d9ff;
+    margin-top: 0;
+}
+
+h3 {
+    color: #a78bfa;
+}
+
+
+/* 5. IMÁGENES */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* FOTO DE PERFIL: MÁS PEQUEÑA */
+
+main > section:first-child img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+/* IMÁGENES DE PROYECTOS */
+
+figure img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* 6. LISTAS */
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* 7. ENLACES */
+
+a {
+    color: #00d9ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #a78bfa;
+    text-decoration: underline;
+}
+
+
+/* 8. SECCIÓN DESTACADA */
+
+.destacada {
+    background-color: #202d4a;
+    border: 2px solid #00d9ff;
+}
+
+
+/* 9. PROYECTOS */
+
+.proyectos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+figure {
+    flex: 1;
+    min-width: 220px;
+    margin: 0;
+    background-color: #0b1020;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #263653;
+}
+
+figcaption h3 {
+    color: #00d9ff;
+}
+
+figcaption p {
+    color: #b8c7df;
+}
+
+
+/* 10. AUDIO Y VIDEO */
+
+audio {
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+    border-radius: 12px;
+    background-color: #000000;
+}
+
+
+/* 11. FORMULARIO DE CONTACTO */
+
+#contacto {
+    padding: 30px 25px;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+#contacto label {
+    color: #b8c7df;
+    font-weight: bold;
+}
+
+#contacto input,
+#contacto select,
+#contacto textarea {
+    background-color: #0b1020;
+    color: #ffffff;
+    border: 1px solid #344765;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#contacto input:focus,
+#contacto select:focus,
+#contacto textarea:focus {
+    outline: none;
+    border-color: #00d9ff;
+}
+
+#contacto input::placeholder,
+#contacto textarea::placeholder {
+    color: #8290a8;
+}
+
+
+/* OPCIONES DE MODALIDAD */
+
+#contacto input[type="radio"] {
+    accent-color: #00d9ff;
+}
+
+#contacto button {
+    background-color: #00b8d9;
+    color: #0b1020;
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacto button:hover {
+    background-color: #a78bfa;
+}
+
+.aviso-formulario {
+    font-size: 13px;
+    color: #9eabc2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* 12. ENLACE PARA VOLVER AL EQUIPO */
+
+.volver-equipo {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+}
+
+.volver-equipo a {
+    display: inline-block;
+    background-color: #172b4d;
+    border: 1px solid #00d9ff;
+    border-radius: 8px;
+    padding: 12px 22px;
+}
+
+.volver-equipo a:hover {
+    background-color: #00d9ff;
+    color: #0b1020;
+    text-decoration: none;
+}
+
+
+/* 13. PIE DE PÁGINA */
+
+footer {
+    background-color: #070b16;
+    color: #b8c7df;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #263653;
+}
+
+footer h3 {
+    color: #00d9ff;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #8290a8;
+    margin-top: 20px;
+}
+
+
+/* 14. ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .proyectos {
+        flex-direction: column;
+    }
+
+    figure {
+        min-width: auto;
+    }
+
+}
